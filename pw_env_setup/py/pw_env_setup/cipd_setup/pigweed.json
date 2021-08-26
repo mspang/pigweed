@@ -5,21 +5,24 @@
       "linux-amd64",
       "linux-arm64",
       "mac-amd64",
+      "mac-arm64",
       "windows-amd64"
     ],
     "tags": [
-      "git_revision:b2d77ab1373192d1532af94b68fb8bab727b0e5b"
+      "git_revision:69ec4fca1fa69ddadae13f9e6b7507efa0675263"
     ]
   },
   {
-    "path": "infra/ninja/${platform}",
+    "path": "infra/3pp/tools/ninja/${platform}",
     "platforms": [
       "linux-amd64",
+      "linux-arm64",
       "mac-amd64",
+      "mac-arm64",
       "windows-amd64"
     ],
     "tags": [
-      "version:1.9.0"
+      "version:2@1.10.2"
     ]
   },
   {
@@ -63,7 +66,17 @@
       "windows-amd64"
     ],
     "tags": [
-      "version:3.14.0"
+      "version:2@3.17.3"
+    ]
+  },
+  {
+    "_comment": "Until there's an arm64 Mac version, get the amd64 Mac version on arm64 Macs.",
+    "path": "infra/3pp/tools/protoc/mac-amd64",
+    "platforms": [
+      "mac-arm64"
+    ],
+    "tags": [
+      "version:2@3.17.3"
     ]
   },
   {
@@ -84,10 +97,11 @@
       "linux-amd64",
       "linux-arm64",
       "mac-amd64",
+      "mac-arm64",
       "windows-amd64"
     ],
     "tags": [
-      "version:2@1.16.5"
+      "version:2@1.17"
     ]
   },
   {
@@ -129,7 +143,7 @@
       "windows-amd64"
     ],
     "tags": [
-      "git_revision:4d604694ae78abf2d57b8aa9f89084d95db86e51"
+      "git_revision:5f10ff81c5d6f6262f5c18759d167e3be270fc72"
     ]
   },
   {
@@ -139,7 +153,7 @@
       "windows-amd64"
     ],
     "tags": [
-      "git_revision:4a0a3bdfde6c19d6ef433d21a2d70e4bf9f93ac6"
+      "re_client_version:0.39.0.577406d"
     ]
   },
   {
@@ -176,10 +190,24 @@
   {
     "path": "infra/3pp/tools/renode/${platform}",
     "platforms": [
-      "linux-amd64"
+      "linux-amd64",
+      "linux-arm64"
     ],
     "tags": [
       "version:2@renode-1.11.0+20210306gite7897c1"
+    ]
+  },
+  {
+    "path": "infra/3pp/tools/buildifier/${platform}",
+    "platforms": [
+      "linux-amd64",
+      "linux-arm64",
+      "mac-amd64",
+      "mac-arm64",
+      "windows-amd64"
+    ],
+    "tags": [
+      "version:2@4.0.1"
     ]
   }
 ]
